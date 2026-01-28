@@ -4,6 +4,7 @@
 @purpose: My first Java program
 */
 
+package src.labs.example.hello;
 //This is my class name
 public class HelloWorld
 {
