@@ -8,8 +8,9 @@ public class Mammal
     int age;
     double weight;
     boolean isAwake;
+    boolean isSitting;
 
-    public Mammal(String hairColor, String eyeColor, double bodyTemp, int age, double weight, boolean isAwake) 
+    public Mammal(String hairColor, String eyeColor, double bodyTemp, int age, double weight, boolean isAwake, boolean isSitting) 
     {
         this.hairColor = hairColor;
         this.eyeColor = eyeColor;
@@ -17,7 +18,9 @@ public class Mammal
         this.age = age;
         this.weight = weight;
         this.isAwake = isAwake;
+        this.isSitting = isSitting;
     }
+
 
     public void run() 
     {
@@ -64,5 +67,25 @@ public class Mammal
     public void isMoving()
     {
         System.out.println("The mammal is moving.");
+    }
+
+    public void getMammalDetails()
+    {
+        System.out.println(this.hairColor);
+        System.out.println(this.eyeColor);
+    }
+
+    public void sit()
+    {
+        System.out.println("The animal not sitting.");
+
+        if (!isSitting) 
+        {
+            isSitting = true;
+        }
+        else 
+        {
+            System.out.println("The mammal is already sitting.");
+        }
     }
 }
