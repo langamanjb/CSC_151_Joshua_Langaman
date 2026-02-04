@@ -9,6 +9,7 @@ public class Mammal
     double weight;
     boolean isAwake;
     boolean isSitting;
+    String name;
 
     public Mammal(String hairColor, String eyeColor, double bodyTemp, int age, double weight, boolean isAwake, boolean isSitting) 
     {
@@ -29,44 +30,44 @@ public class Mammal
 
     public void eat() 
     {
-        System.out.println("The mammal is eating.");
+        System.out.println(name + " is eating.");
     }
     
     public void sleep() 
     {
         isAwake = false;
-        System.out.println("The mammal is sleeping.");
+        System.out.println(name + " is sleeping.");
     }
 
     public void scratch() 
     {
-        System.out.println("The mammal is scratching itself.");
+        System.out.println(name + " is scratching itself.");
     }
 
     public void wakeUp() 
     {
         isAwake = true;
-        System.out.println("The mammal is awake.");
+        System.out.println(name + " is awake.");
     }
 
     public void makingNoise()
     {
-        System.out.println("The mammal makes a noise.");
+        System.out.println(name + " makes a noise.");
     }
 
     public void breath() 
     {
-        System.out.println("The mammal is breathing.");
+        System.out.println(name + " is breathing.");
     }
 
     public void drinkingWater() 
     {
-        System.out.println("The mammal is drinking water.");
+        System.out.println(name + " is drinking water.");
     }
 
     public void isMoving()
     {
-        System.out.println("The mammal is moving.");
+        System.out.println(name + " is moving.");
     }
 
     public void getMammalDetails()
@@ -75,17 +76,29 @@ public class Mammal
         System.out.println(this.eyeColor);
     }
 
-    public void sit()
+    public void sit() throws Exception
     {
-        System.out.println("The animal not sitting.");
+        isSitting = true;
+        System.out.println(name + " is sitting.");
+        Thread.sleep(15000);
 
-        if (!isSitting) 
-        {
-            isSitting = true;
-        }
-        else 
-        {
-            System.out.println("The mammal is already sitting.");
-        }
+
+
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
+        return;
+    }
+
+    public String getName()
+    {
+       return this.name;
+    }
+    public Mammal()
+    {
+        
     }
 }
+    
