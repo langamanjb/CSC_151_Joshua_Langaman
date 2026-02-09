@@ -82,7 +82,7 @@ public class Mammal
     {
         isSitting = true;
         System.out.println(name + " is sitting.");
-        Thread.sleep(15000);
+        //Thread.sleep(15000);
     }
 
     public void setName(String name)
@@ -124,6 +124,10 @@ public class Mammal
 
         System.out.printf("%s Angle from South to East: %.2f degrees %n", name, angleInDegrees);
         return angleInDegrees;
+    }
+    public void barking()
+    {
+        System.out.println("Woof Woof!");
     }
 }
     
