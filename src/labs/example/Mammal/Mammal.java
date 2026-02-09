@@ -10,7 +10,7 @@ public class Mammal
     boolean isAwake;
     boolean isSitting;
     String name;
-    String species;
+    String species;  
 
     public Mammal(String hairColor, String eyeColor, double bodyTemp, int age, double weight, boolean isAwake, boolean isSitting, String name, String species) 
     {
