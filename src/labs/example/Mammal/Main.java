@@ -10,14 +10,16 @@ public class Main
         String mammalName = mammal.getName();
         System.out.println("Mammal Name: " + mammalName);
 
-       // mammal.sit();
-       // System.out.println(mammalName + " is no longer sitting.");
+       mammal.sit();
+       System.out.println(mammalName + " is no longer sitting.");
 
-        // mammal.isMoving();
-        // mammal.makingNoise();
+        mammal.isMoving();
+        mammal.makingNoise();
 
         mammal.walk();
         mammal.calculateAngle();
+
+       
 
     }
 }

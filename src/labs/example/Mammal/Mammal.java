@@ -10,8 +10,9 @@ public class Mammal
     boolean isAwake;
     boolean isSitting;
     String name;
+    String species;
 
-    public Mammal(String hairColor, String eyeColor, double bodyTemp, int age, double weight, boolean isAwake, boolean isSitting) 
+    public Mammal(String hairColor, String eyeColor, double bodyTemp, int age, double weight, boolean isAwake, boolean isSitting, String name, String species) 
     {
         this.hairColor = hairColor;
         this.eyeColor = eyeColor;
@@ -20,6 +21,7 @@ public class Mammal
         this.weight = weight;
         this.isAwake = isAwake;
         this.isSitting = isSitting;
+        this.species = "";
     }
 
 
@@ -97,6 +99,12 @@ public class Mammal
     {
         
     }
+    public void species(String speciesName) 
+    {
+        System.out.println("Species: " + speciesName);
+        return;
+    }
+    
     public int walk()
     {
         int walkSouth = 3;
