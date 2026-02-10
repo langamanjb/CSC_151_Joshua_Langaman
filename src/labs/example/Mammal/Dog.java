@@ -1,18 +1,15 @@
 package src.labs.example.Mammal;
 
-public class Dog 
+public class Dog extends Mammal
 {
-    public void checkSpecies(String species) 
+    public Dog(String name)
     {
-        if(species == ("Dog"))
-        {
-            System.out.println("This is a dog.");
-
-        }
-        else
-        {
-            System.out.println("This is not a dog.");
-        }
+        this.name = name;
+    }
+    
+    public void bark()
+    {
+        System.out.println(name + " says: Bark! Bark!");
     }
 
 }
