@@ -4,7 +4,7 @@ public class Main
 {
     public static void main (String[] args) throws Exception 
     {
-    //     Mammal mammal = new Mammal();
+        Mammal mammal = new Mammal();
 
     //     mammal.setName("Cat");
     //     String mammalName = mammal.getName();
@@ -16,8 +16,8 @@ public class Main
     //     mammal.isMoving();
     //     mammal.makingNoise();
 
-    //     mammal.walk();
-    //     mammal.calculateAngle();
+        mammal.walk();
+        mammal.calculateAngle();
 
     
         Dog dog = new Dog("Feast");
