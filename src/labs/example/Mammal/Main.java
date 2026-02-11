@@ -19,10 +19,11 @@ public class Main
         mammal.walk();
         mammal.calculateAngle();
 
-    
-        Dog dog = new Dog("Feast");
+        // Create an instance of the Dog class, which is a subclass of Mammal, and demonstrate its functionality.
+
+        Dog dog = new Dog("Feast"); // My actual dogs name. 
         System.out.println("Dog Name: " + dog.getName());
-        dog.bark();
+        dog.bark(); // This will call the bark method of the Dog class, which will print a message to the console that includes the dog's name.
        
 
     }
