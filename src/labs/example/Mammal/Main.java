@@ -1,3 +1,10 @@
+/*
+@author: Joshua Langaman
+@date: 2/11/26
+@description: This class contains the main method that demonstrates the functionality of the Mammal class and its subclass, Dog.
+It creates instances of these classes and calls their methods to show how they work
+*/
+
 package src.labs.example.Mammal;
 
 public class Main 
