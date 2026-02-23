@@ -3,7 +3,7 @@
 @Date: 2/11/26
 @Description: This class contains methods to calculate various physical quantities such as distance, velocity, momentum, force, work, kinetic energy, and potential energy.
 */
-package src.labs.example.physics;
+package labs.example.physics;
 
 import java.lang.Math; // Importing this allows you to use certain math functions, such as Math.pow() for calculating powers.
 

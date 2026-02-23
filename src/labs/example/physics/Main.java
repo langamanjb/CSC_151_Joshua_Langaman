@@ -3,7 +3,7 @@
 @Date: 2/11/26
 @Description: This program demonstrates the use of a physics class to calculate various physical quantities.
 */
-package src.labs.example.physics;
+package labs.example.physics;
 
 public class Main 
 {

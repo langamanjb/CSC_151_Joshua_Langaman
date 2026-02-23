@@ -1,4 +1,4 @@
-package src.labs.example.Mammal;
+package labs.example.Mammal;
 
 public class Mammal 
 {

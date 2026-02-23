@@ -4,7 +4,7 @@
 @description: This class defines a Dog, which is a type of Mammal. It includes a constructor to set the dog's name and a method to simulate the dog barking.
 */
 
-package src.labs.example.Mammal;
+package labs.example.Mammal;
 
 public class Dog extends Mammal 
 {

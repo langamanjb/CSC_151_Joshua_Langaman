@@ -5,7 +5,7 @@
 It creates instances of these classes and calls their methods to show how they work
 */
 
-package src.labs.example.Mammal;
+package labs.example.Mammal;
 
 public class Main 
 {
