@@ -17,7 +17,7 @@ public class Week10ArrayMax
         // Assume first element is the max to compare with
         int max = arr[0];
 
-       
+       // The loop starts from 1 because we already considered the first element as max
         for (int i = 1; i < arr.length; i++) 
             {
 

@@ -12,6 +12,7 @@ package labs.example.array;
 
 public class Week10ArraySum 
 {
+    // Method to sum the values in an array
     public int getArraySum(int[] arr) 
     {
         int sum = 0;
@@ -23,7 +24,7 @@ public class Week10ArraySum
 
         return sum;
     }
-
+    // Method to compare the sums of the three arrays and print which one has the highest value
     public void printHighestArray(int sum1, int sum2, int sum3) 
     {
         if (sum1 > sum2 && sum1 > sum3) 

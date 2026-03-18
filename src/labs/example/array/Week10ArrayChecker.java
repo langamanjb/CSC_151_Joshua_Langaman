@@ -20,7 +20,7 @@ public class Week10ArrayChecker
 
     public boolean sameValues(int[] firstArray, int[] secondArray) 
     {
-        // First check if the arrays are the same length becausue if theyre not the same length, they cannt have the same values
+        // First check if the arrays are the same length becausue if theyre not the same length, they cannot have the same values
         if (firstArray.length != secondArray.length) 
         {
             return false; 

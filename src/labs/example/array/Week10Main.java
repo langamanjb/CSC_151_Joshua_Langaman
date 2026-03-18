@@ -63,8 +63,10 @@ public class Week10Main
         }
 
         // #2
+        
         Week10ArraySum arraySum = new Week10ArraySum();
 
+        // Change the values in these arrays to test
         int[] arr1 = 
         {
             12, 7, 45, 23, 9,
@@ -105,7 +107,7 @@ public class Week10Main
         // #3
 
         Week10ArrayMax arrayMax = new Week10ArrayMax();
-
+        // Change the values in this array to test
         int[] myArray = 
         {
             12, 45, 7, 89, 23, 56, 91, 34, 67, 18,
@@ -125,8 +127,11 @@ public class Week10Main
         Week10CCValidChecker ccChecker = new Week10CCValidChecker();
 
         // Known valid test number
-        String cardNumber = "4532015112830326";
+        String cardNumber = "4532015112830366";
+        // Known invalid test number
+        //String cardNumber = "1234567890123456"; 
 
+        // Check if the credit card number is valid
         boolean isValid = ccChecker.isValid(cardNumber);
 
         if (isValid) 

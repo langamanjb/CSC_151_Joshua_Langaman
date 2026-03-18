@@ -12,12 +12,11 @@ public class Week10CCValidChecker
 
         // Loop from right to left
         for (int i = cardNumber.length() - 1; i >= 0; i--) 
-            {
-
+        {
             int digit = cardNumber.charAt(i) - '0';
 
             if (doubleDigit) 
-                {
+            {
                 digit = digit * 2;
 
                 if (digit > 9) 
