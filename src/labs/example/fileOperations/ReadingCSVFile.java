@@ -1,11 +1,13 @@
 /*
 @author: Joshua Langaman
 @date: 3/25/26
-Description: This program demonstrates how to read a CSV file in Java. It reads the contents of a CSV file, splits each line into fields, and prints them to the console.
+Description: This program demonstrates how to read a CSV file in Java. It reads the contents of a CSV file,
+splits each line into fields,and prints them to the console.
 */
 
 package labs.example.fileOperations;
 
+//All of the packages that we need to import for this program to work
 import java.io.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -14,7 +16,7 @@ import java.util.*;
 public class ReadingCSVFile
 {
     private static final String CSV_FILE_PATH = "/Users/joshualangaman/CSC_151_Joshua_Langaman/src/labs/example/fileOperations//";// Update this path to your CSV file
-    private static final String CSV_FILE_NAME = CSV_FILE_PATH + "/users.csv"; // Update this to your CSV file name
+    private static final String CSV_FILE_NAME = CSV_FILE_PATH + "/users.csv"; 
 
     public static void main(String args[])
     {
@@ -34,6 +36,7 @@ public class ReadingCSVFile
             //if the file and directories exist, then start processing
             if(csv_file.exists())
             {
+                //create a handle to a new BufferedReader object to read the file
                 BufferedReader br = new BufferedReader(new FileReader(CSV_FILE_NAME));
                 String line;
                 int count = 0;
@@ -58,10 +61,12 @@ public class ReadingCSVFile
             }
             else
             {
+                //if the file does not exist, print an error message to the console
                 System.out.println("CSV file does not exist. Please check the file path and name.");
             }
             csv_file_writer.close();
         }
+        //catch any IO exceptions that may occur during file operations
         catch(IOException e)
         {
             System.out.println(e);
