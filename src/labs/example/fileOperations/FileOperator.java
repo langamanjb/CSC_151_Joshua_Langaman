@@ -10,6 +10,7 @@ import java.util.*;
 //define the FileOperator Class
 public class FileOperator {
 
+
     //define the static variable to hold the path to the file name
     private static final String FILE_PATH = "T:\\CSC_151\\src\\labs\\example\\fileOperations\\";
     private static final String FILE_NAME = FILE_PATH + "files\\users.csv";
