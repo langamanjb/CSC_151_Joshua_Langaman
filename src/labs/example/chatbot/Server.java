@@ -7,7 +7,7 @@ import java.util.*;
 public class Server {
     public static void main(String[] args) {
         try {
-            ServerSocket serverSocket = new ServerSocket(5000);
+            ServerSocket serverSocket = new ServerSocket(5001);
             System.out.println("Server started. Listening on port 5000...");
 
             while (true) {
